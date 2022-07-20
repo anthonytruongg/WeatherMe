@@ -30,5 +30,6 @@
 // }
 
 // doWork()
+// import getWeather from './fetchWeather';
 import getWeather from './fetchWeather';
 getWeather(); 
