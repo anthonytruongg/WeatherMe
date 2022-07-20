@@ -1,7 +1,8 @@
 body {
     background-image: url(/src/images/mountain.jpg);
     background-color: #6e6e6e;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: comfortaa, sans-serif;
     font-size: 14px;
     margin: 0;
     padding: 0;
@@ -15,6 +16,7 @@ body {
 
     padding: 30px;
     text-align: center;
+    opacity: 0.7;
 }
 #location {
     font-size: 20px;
@@ -22,14 +24,20 @@ body {
     margin: 20px;
     border-radius: 10px;
     padding: 10px;
-    background-color: #3f3f46;
+    background-color: #111827;
     border: none;
     box-shadow: #3f3f46 0px 0px 10px;
-    color: white;
+    color: rgb(255, 255, 255);
     outline: none;
+    opacity: 0.7;
 }
 #location:focus {
-    background-color: #e7e5e4;
+    background-color: #cecdcc;
+    transform: scale(1.5);
+    transition: 0.3s;
+    font-size: 20px;
+    color: white;
+    opacity: 100%;
     box-shadow: #3f3f46 0px 0px 10px;
 }
 label {
@@ -38,7 +46,7 @@ label {
     border: none;
 }
 #getLocation {
-    background-color: #96cfd6;
+    background-color: #8eb1b6;
     box-shadow: #ffffff 0px 0px 10px;
 
     border: none;
@@ -46,11 +54,29 @@ label {
     border-radius: 10px;
     padding: 10px;
 }
+#getLocation:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+    font-size: 20px;
+}
+/* ---------------------------------------------------------------------------- */
 .containerTwo {
     color: white;
-    border: 2px solid black;
+    
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 300px;
+
+}
+.weather-info-temp {
+    padding: 30px;
+    text-align: left;
+    /* background-color: #94a3b8;
+    border-radius: 20px; */
+}
+/* ---------------------------------------------------------------------------- */
+.pictureSVG {
+    color: white;
 }

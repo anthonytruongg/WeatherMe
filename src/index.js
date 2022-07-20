@@ -31,5 +31,7 @@
 
 // doWork()
 // import getWeather from './fetchWeather';
-import getWeather from './fetchWeather';
-getWeather(); 
+import {getLocation, getWeather} from './fetchWeather';
+getLocation();
+// Setting default city to San Francisco
+getWeather('San Francisco');
